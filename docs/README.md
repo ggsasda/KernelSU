@@ -12,6 +12,16 @@ A Kernel-based root solution for Android devices.
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-orange.svg?logo=gnu)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![GitHub License](https://img.shields.io/github/license/tiann/KernelSU?logo=gnu)](/LICENSE)
 
+## How to add
+
+```sh
+curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh" | bash -s main
+```
+
+## How to integrate
+
+https://kernelsu.org/guide/how-to-integrate-for-non-gki.html
+
 ## Features
 
 1. Kernel-based `su` and root access management.
