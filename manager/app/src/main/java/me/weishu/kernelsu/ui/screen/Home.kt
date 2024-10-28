@@ -103,6 +103,7 @@ fun HomeScreen(navigator: DestinationsNavigator) {
                 UpdateCard()
             }
             InfoCard()
+            RsuUnofficialCard()
             DonateCard()
             LearnMoreCard()
             Spacer(Modifier)
@@ -395,7 +396,7 @@ fun DonateCard() {
 }
 
 @Composable
-fun UnofficialCard() {
+fun RsuUnofficialCard() {
     val uriHandler = LocalUriHandler.current
 
     ElevatedCard {
