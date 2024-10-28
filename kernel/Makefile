@@ -40,13 +40,14 @@ endif
 #
 # Manager sign has been changed!
 # if you wanna use official manager,
-# please check https://github.com/tiann/KernelSU/blob/main/kernel/Makefile#L33
+# please run `export KSU_OFFICIAL_HASH=y`
 #
-ifndef KSU_EXPECTED_SIZE
-KSU_EXPECTED_SIZE := 0x396
-endif
 
-ifndef KSU_EXPECTED_HASH
+ifneq ($(KSU_OFFICIAL_HASH),)
+KSU_EXPECTED_SIZE := 0x033b
+KSU_EXPECTED_HASH := c371061b19d8c7d7d6133c6a9bafe198fa944e50c1b31c9d8daa8d7f1fc2d2d6
+else
+KSU_EXPECTED_SIZE := 0x396
 KSU_EXPECTED_HASH := f415f4ed9435427e1fdf7f1fccd4dbc07b3d6b8751e4dbcec6f19671f427870b
 endif
 
